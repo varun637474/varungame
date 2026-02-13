@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>game</title>
+</head>
+<body>
+
+   <button onclick=" rock()
+      
+      ">rock</button>
+   
+   <button onclick=" paper()
+   
+   ">paper</button>
+
+   <button onclick="stone()
+   ">stone</button>
+
+   <button onclick="restore()
+   
+   ">restor</button>
+
+
+   <script>
+      c=0;
+      function rock(){
+         num  = Math.random();
+         if(num < 1/3)
+      {
+         
+         c = c+1;
+         if(c<=0)
+         {
+            c = 0;
+            c=C+1;
+            alert(`You win -- score : ${c}`);
+
+         }
+         else{
+         alert(`You won -- score : ${c}`);
+         }
+
+      }
+      else{
+         c = c-1;
+         if(c <=1){
+         alert(`You loss -- score : 0`);
+         }
+         else{
+            alert(`You loss -- score : ${c}`);
+
+         }
+      }
+
+      }
+
+      function paper(){
+        num =  Math.random();
+           if(num > 0.3333333333 && num < 0.6666666)
+      {
+         
+         c=c+1;
+         if(c<=0)
+      {
+         c=0;
+         c=c+1;
+         alert(`You won -- score : 0`);
+      }
+      else{
+         alert(`You won -- score : ${c}`);
+      }
+      }
+      else{
+         c=c-1;
+         if(c<0)
+      {
+         alert(`You loss -- score : 0`);
+      }
+      else{
+         alert(`you loss -- socre : ${c}`);
+      }
+      }
+      }
+
+      function stone(){
+
+         num =  Math.random();
+           if(num >0.6666666666 && num < 0.9999999999)
+           {
+            c=c+1;
+         
+         
+         if(c<=0)
+         {
+            c = 0;
+            c=C+1;
+            alert(`You win -- score : ${c}`);
+
+         }
+         else{
+            
+         alert(`You won -- score : ${c}`);
+         }
+
+      }
+      else{
+         
+         if(c <=0){
+         alert(`You loss -- score : 0`);
+         }
+         else{
+            c=c-1;
+            alert(`You loss -- score : ${c}`);
+
+         }
+      }
+      
+
+      }
+
+      function restore(){
+       c=0;
+      
+         
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+   
+</body>
+</html>
